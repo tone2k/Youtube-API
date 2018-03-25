@@ -13,8 +13,10 @@ function populateResults(data) {
     $(`#videoResults`).empty();
     let html = "";
     for (let i=0; i<data.items.length; i++) {
-        html += "<li>" + data.items[i].snippet.channelTitle + "</li>";
-        html += "<li>" + data.items[i].snippet.thumbnails.medium.url + "</li>";
+        html += "<li>" + data.items[i].snippet.title + "</li>";
+        // videoId = data.items[i].snippet.resourceId.videoId
+
+        // '<li><iframe src=\"//www.youtube.com/embed/'+videoId+'\" ></iframe></li>'
     }
     $(`#videoResults`).append(html);
 }

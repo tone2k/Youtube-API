@@ -13,3 +13,7 @@ body {
     background: white;
     padding: 15px;
 }
+
+#videoResults {
+    list-style: none;
+}
