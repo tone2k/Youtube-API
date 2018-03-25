@@ -5,13 +5,15 @@ $(`#videoForm`).submit(function (event) {
     event.preventDefault();
     const search = $(`#videoForm`).val();
     $(`#videoForm`).val(``);
-    handleVideos(searchTerm);
+    handleVideos(search);
 });
 
 function populateResults(data) {
     console.log(`data populated!`)
     $(`#videoResults`).empty();
     const html = "";
+
+    $(`#videoResults`).append(html);
 }
 
 function handleVideos(searchTerm) {
