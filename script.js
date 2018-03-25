@@ -22,7 +22,7 @@ function populateResults(data) {
 function handleVideos(search) {
     let parameters = {
         key: `AIzaSyCrVDceP1-KwRsIVi12ODPCwS2oSHe-_7k`,
-        q: `searchTerm`,
+        q: $(`#search-term`).val(),
         part: `snippet`,
         maxResults: 25,
     };
