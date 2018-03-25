@@ -4,8 +4,8 @@ $(`#videoForm`).submit(function (event) {
     console.log(`form submitted!`)
     event.preventDefault();
     let search = $(`#search-term`).val();
-    $(`#search-term`).val(``);
     handleVideos(search);
+    $(`#search-term`).val(``);
 });
 
 function populateResults(data) {
