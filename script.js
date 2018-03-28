@@ -18,6 +18,7 @@ function populateResults(data) {
 
         // '<li><iframe src=\"//www.youtube.com/embed/'+videoId+'\" ></iframe></li>'
     }
+    $(`#videoResults`).prop('hidden', false);
     $(`#videoResults`).append(html);
 }
 
